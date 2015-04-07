@@ -64,7 +64,14 @@ section.skills .below-divider {
       font-family: 'Alegreya Sans SC', sans-serif;
       color: #FF5F60;
 }
-
+/*.chart p.ng-binding {
+  transform: rotate(270deg);
+  top: 40%;
+  font-size: 2em;
+  position: relative;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+}*/
 
 @keyframes draw{
   0%{height:0;} 
