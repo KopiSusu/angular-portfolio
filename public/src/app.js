@@ -82,6 +82,7 @@
       languages: 'HTML, CSS, Javascript, Ruby, Rails, SQL, scraper',
       description: 'A recipe app that allows you to easily save and edit all your favorite recipes found online.',
       image: '../images/mise.png',
+      url: 'http://104.131.0.242:8080/',
       id: 1,
     },
     {
@@ -89,6 +90,7 @@
       languages: 'Three.js, Node.js, Javascript, CSS, Socket.io, Grunt.',
       description: '3-D, browser based game modeled on the RISK board game.',
       image: '../images/attrition.png',
+      url: 'http://104.131.86.28:3000/',
       id: 2,
     },
     {
@@ -96,6 +98,7 @@
       languages: 'HTM, CSS, Javascript, Ruby, Rails, SQL.',
       description: 'A video game social site that lets you rate, review and discover new games. ',
       image: '../images/indie.png',
+      url: 'http://104.131.90.102:8080/',
       id: 3,
     },
     {
@@ -103,6 +106,7 @@
       languages: 'HTML, CSS, JQuery, Javascript, CSS3Renderer, Three.js, Youtube API',
       description: 'Utilizes a youtube API coupled with a webGL CSS3 Renderer.',
       image: '../images/youtube.png',
+      url: 'http://kopisusu.github.io/mytube/',
       id: 4,
     },
   ];

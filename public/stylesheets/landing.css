@@ -41,6 +41,12 @@ canvas {
   transform: translate3d(-50%,-50%,0);
   border-bottom: 1px solid;
 }
+.main-blurb span.color-change {
+  transition: color 0.5s ease;
+}
+.main-blurb span.color-change:hover {
+  color: #42494E;
+}
 .columns {
   -moz-column-count: 2;
   -webkit-column-count: 2;
@@ -66,10 +72,17 @@ canvas {
   opacity: 0.6;
   transition: opacity 0.5s ease;
 }
-
 .landing .side-bar .side:hover {
   opacity: 1;
 }
-
+.landing .side-bar .side p {
+  position: fixed;
+  left: 60px;
+  margin-top: -30px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  font-size: 0.8em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
 
 

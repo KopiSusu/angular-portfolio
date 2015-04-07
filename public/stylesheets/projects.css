@@ -51,6 +51,10 @@ section#projects-page {
       text-decoration: none;
       font-family: 'Alegreya Sans SC', sans-serif;
       font-weight: 100; 
+      transition: color 0.5s ease;
+    }
+    section#projects-page ul.nav.nav-pills a:hover {
+      color: #42494E;
     }
   section#projects-page h2 {
     font-family: "Mohave";
