@@ -1,0 +1,19 @@
+<section class='row' ng-controller='MysiteController as Mysite'>
+  <div class='col-sm-12 panel' ng-repeat='project in Mysite.projects'>
+
+    <div ng-show='panel.isSelected({{project.id}})'>
+      <h2>{{project.name}}</h2>
+      <div class='project-column'>
+        <div class='image'>
+          <img ng-src="{{project.image}}"/>
+        </div>
+        <div class='info'>
+          <h3> Made with: </h3>
+          <p>{{project.languages}}</p>
+          <hr>
+          <p>{{project.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<section class="container skills" ng-controller='SkillsController as SkillsCtrl'> 
+  <div class ='divider'> </div> 
+  <div class ='below-divider'> </div> 
+  <h1> skills </h1>
+  <ul class="chart">
+    <li ng-repeat='skill in SkillsCtrl.skills'>
+      <span style="height:{{skill.level}}" title="{{skill.name}}"></span>
+    </li>
+  </ul>  
+</section>
+

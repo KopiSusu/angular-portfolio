@@ -1,0 +1,12 @@
+<section ng-controller='PanelController as panel' id='projects-page'>
+  <p class='switch'> <a href ng-click='page.selectPage(1)' > About </a> </p>
+  <ul class='nav nav-pills'>
+    <li ng-class='{active:panel.isSelected(1)}' class='inline navlink'><a href ng-click='panel.selectTab(1)'>Mise An App</a></li>
+    <li ng-class='{active:panel.isSelected(2)}' class='inline navlink'><a href ng-click='panel.selectTab(2)'>Attrition</a></li>
+    <li ng-class='{active:panel.isSelected(3)}' class='inline navlink'><a href ng-click='panel.selectTab(3)'>UnderCover Indie</a></li>
+    <li ng-class='{active:panel.isSelected(4)}' class='inline navlink'><a href ng-click='panel.selectTab(4)'>MyTube</a></li>
+  </ul>
+
+  <project-page></project-page>
+
+</section>
