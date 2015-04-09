@@ -1,5 +1,6 @@
 (function() {
   var app = angular.module('MysiteApp', ['ngRoute', 'n3-line-chart']);
+  var page = 1;
 
   // controllers
   app.controller('PanelController', function() {
@@ -22,15 +23,42 @@
   });
 
   app.controller('PageController', function() {
-    this.page = 1;
 
     this.selectPage = function(setPage) {
-      this.page = setPage;
+      page = setPage;
     };
     this.isSelected = function(checkPage) {
-      return this.page === checkPage;
+      return page === checkPage;
     };
   });
+
+  app.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
+  function ($scope, $location, $anchorScroll) {
+    $scope.gotoPortfolio = function() {
+      var old = $location.hash();
+      page = 2;
+      setTimeout(function(){
+        $location.hash('portfolio');
+        $anchorScroll();
+        $location.hash(old);
+      }, 50);
+    };
+    $scope.gotoAbout = function() {
+      var old = $location.hash();
+      page = 1;
+      setTimeout(function(){
+        $location.hash('about');
+        $anchorScroll();
+        $location.hash(old);
+      }, 50);
+    };
+    $scope.gotoSkills = function() {
+      var old = $location.hash();
+      $location.hash('skills');
+      $anchorScroll();
+      $location.hash(old);
+    };
+  }]);
 
   // directives
   app.directive('projectPage', function() {

@@ -41,8 +41,11 @@ canvas {
   transform: translate3d(-50%,-50%,0);
   border-bottom: 1px solid;
 }
+.main-blurb span.color-change:nth-child(1) {
+}
 .main-blurb span.color-change {
   transition: color 0.5s ease;
+  cursor: pointer;
 }
 .main-blurb span.color-change:hover {
   color: #42494E;

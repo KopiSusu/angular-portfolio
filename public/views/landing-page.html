@@ -2,8 +2,14 @@
   <div id="large-header" class="large-header">
     <canvas id="demo-canvas"></canvas>
     <h1 class="main-title"><span>K<span class='pink'>O</span>PI</span><br> <span class="thin">SUSU</span></h1>
-    <p class='main-blurb'> Stay Connected </p>
-    <p class='main-blurb'> <span class='color-change'>Portfolio</span> - <span class='color-change'>About</span> - <span class='color-change'>Skills</span> </p>
+    <div ng-controller="ScrollController">
+      <p class='main-blurb'> </p>
+      <p class='main-blurb'> 
+        <span class='color-change' ng-click="gotoPortfolio()">Portfolio</span> - 
+        <span class='color-change' ng-click="gotoAbout()">About</span> - 
+        <span class='color-change' ng-click="gotoSkills()">Skills</span></a> 
+      </p>
+    </div>
   </div>
   <div class='side-bar'>
     <div class='side'>
@@ -15,7 +21,7 @@
       <img src='../images/github.png'></a>
     </div>
     <div class='side'>
-      <a href="https://www.linkedin.com/profile/view?id=384171934&trk=nav_responsive_tab_profile_pic/"> 
+      <a href="https://www.linkedin.com/pub/komang-luce/a8/7a9/87a"> 
       <img src='../images/linkedin.png'></a>
     </div>
   </div>

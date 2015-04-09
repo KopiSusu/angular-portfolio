@@ -28,12 +28,12 @@ img {
 projects-panel {
   position: relative;
 }
-section#projects-page {
+section.projects-page {
   background: #FF5F60;
   color: #42494E;
   height: 100%;
 }
-  section#projects-page ul.nav.nav-pills {
+  section.projects-page ul.nav.nav-pills {
     margin: 0;
     background: #FF5F60;
     position: absolute;
@@ -41,22 +41,22 @@ section#projects-page {
     top: 25%;
     right: 29%;
   }
-    section#projects-page li.inline.navlink {
+    section.projects-page li.inline.navlink {
       display: inline-block;
       font-size: 1.5em;
       margin-left: 1em;
     }
-    section#projects-page ul.nav.nav-pills a {
+    section.projects-page ul.nav.nav-pills a {
       color: #E7E9EC;
       text-decoration: none;
       font-family: 'Alegreya Sans SC', sans-serif;
       font-weight: 100; 
       transition: color 0.5s ease;
     }
-    section#projects-page ul.nav.nav-pills a:hover {
+    section.projects-page ul.nav.nav-pills a:hover {
       color: #42494E;
     }
-  section#projects-page h2 {
+  section.projects-page h2 {
     font-family: "Mohave";
     text-align: center;
     font-size: 5em;
@@ -65,28 +65,28 @@ section#projects-page {
     padding-top: 0.7em;
     margin-top: 0;
   }
-  section#projects-page .project-column {
+  section.projects-page .project-column {
     padding: 0% 6%;
     margin-top: 8%;
   }
-    section#projects-page .project-column  .info {
+    section.projects-page .project-column  .info {
       width: 32%;
       float: right;
       font-family: 'Alegreya Sans SC', sans-serif;
     }
-      section#projects-page .project-column  .info h3 {
+      section.projects-page .project-column  .info h3 {
         margin-bottom: -4%;
         font-family: "Mohave";
       }
-    section#projects-page .project-column  .info p:nth-child(4) {
+    section.projects-page .project-column  .info p:nth-child(4) {
       font-size: 2em;
       margin-top: 0em;
     }
-    section#projects-page .project-column .image {
+    section.projects-page .project-column .image {
       width: 65%;
       display: inline-block;
     }
-    section#projects-page .project-column .image img {
+    section.projects-page .project-column .image img {
       border: 1px solid;
     }
 
