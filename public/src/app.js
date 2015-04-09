@@ -182,7 +182,7 @@
     },
     {
       name: 'Angular',
-      level: '70%',
+      level: '50%',
     },
   ];
 
