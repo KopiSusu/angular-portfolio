@@ -3,14 +3,39 @@
   var page = 1;
 
   // controllers
-  app.controller('PanelController', function() {
-    this.tab = 1;
+  // app.controller('PanelController', function() {
+  //   this.tab = 1;
+
+  //   this.selectTab = function(setTab) {
+  //     this.tab = setTab;
+  //   };
+  //   this.isSelected = function(checkTab) {
+  //     return this.tab === checkTab;
+  //   };
+  // });
+
+  app.controller('PanelController', function($scope, $timeout) {
+    $scope.tab = 1;
+    this.projects = projects
+  
+    var countUp = function() {
+      if ($scope.tab >= 6) {
+        $scope.tab = 1;
+        $timeout(countUp, 4000);
+      } else {
+        $scope.tab += 1;
+        $timeout(countUp, 4000);
+      }
+    }
+
+    $timeout(countUp, 3500);
+    
 
     this.selectTab = function(setTab) {
-      this.tab = setTab;
+      $scope.tab = setTab;
     };
     this.isSelected = function(checkTab) {
-      return this.tab === checkTab;
+      return $scope.tab === checkTab;
     };
   });
 
@@ -136,6 +161,22 @@
       image: '../images/youtube.png',
       url: 'http://kopisusu.github.io/mytube/',
       id: 4,
+    },
+    {
+      name: 'WorldGDP',
+      languages: 'Three.js, Canvas, HTML/CSS, Javascript, Tween.js',
+      description: 'World GDP Mapped out on Three.js globe',
+      image: '../images/GDP.png',
+      url: 'http://kopisusu.github.io/World-GDP/',
+      id: 5,
+    },
+    {
+      name: 'Goblin Hunter',
+      languages: 'Three.js, Canvas, HTML/CSS, Javascript',
+      description: 'A webGL/Three.js based browser game. Catch as many goblins as you can',
+      image: '../images/hunter.png',
+      url: 'http://kopisusu.github.io/Hunter/',
+      id: 6,
     },
   ];
 

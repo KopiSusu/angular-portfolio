@@ -39,7 +39,9 @@ section.projects-page {
     position: absolute;
     -webkit-padding-start: 0px;
     top: 25%;
-    right: 29%;
+    /* right: 29%; */
+    width: 100%;
+    text-align: center;
   }
     section.projects-page li.inline.navlink {
       display: inline-block;
